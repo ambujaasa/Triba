@@ -3,23 +3,28 @@
 }
 
 .search-div {
-    top: 30px;
+    top: 30px; 
 }
 
 .tos-section, .search-div {
     position: absolute;
     z-index: 1;
     margin: 0 auto;
-    left: 0px;
+    left: 50px;
     width: calc(100vw - 0px);
     display: flex;
     align-items: center;
     justify-content: center;
-    color:var(--white)
+    color:var(--white);
+   
+      
+    
 }
 
+
+
 .search-div .title {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.5rem;
     margin: 0 1rem;
 }
@@ -28,14 +33,16 @@
     font-size: 0.9rem;
     background-color: var(--white);
     color: var(--grey);
-    border-radius: 50%;
+    border-radius: 20%;
     padding: 0.375rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 0.5rem;
     height: 100%;
+    
 }
+
 
 .search-div .input-div {
     display: flex;
@@ -81,15 +88,43 @@
     padding: 0.25rem;
     width: 30px;
     height: 30px;
-    right: 30px;
+    right: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 0.5rem var(--grey);
+    /*box-shadow: 0px 0px 0.5rem var(--white);*/
+    background-color: white;
+    color: black;
+}
+
+.search-div .user-button{
+    /*font-size: 0.9rem;*/
+/*    background-color: var(--grey);*/
+   /* color: var(--white);*/
+    border-radius: 50%;
+    /*padding: 0.575rem;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.9rem;
+    height: 100%;
+
+    padding: 0.25rem;
+    width: 30px;
+    height: 30px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 
 .tos-section {
+    margin-left: -50px;
     bottom: 10px;
+    
+    
+  
 }
 
 .tos-section > div, .search-div > div {
@@ -98,16 +133,27 @@
     background-color: var(--grey);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
-
+.tos-section > div{
+    width: 250px;
+    height: 35px;
+    bottom: 30px;
+}
 .tos-section .tos-link {
     text-decoration: none;
     color:var(--white);
-    margin:0 1rem;
-    font-size: 0.8rem;
+    margin:0 0.3rem;
+    padding: 0%;
+    font-size: 20px;
+    /*font-size: 0.9rem;*/
     font-weight: bold;
+    width: 40px;
+    cursor: pointer;
+
 }
+
+
 
 /* aside section */
 .btn-aside-section {
@@ -120,11 +166,33 @@
     border-radius: 8px;
     padding: 0.5rem 0.25rem;
     width: auto;
+    cursor: pointer;
+    
+
 }
 
-.btn-aside-section {
-    width: 35px;
-}
+
+
+
+ 
+  /*
+  .hide {
+    display: none; 
+  }     
+ #myDIV:hover + .hide {
+    display: block;
+    color: white;
+  }
+  #myDIV:hover{
+    position:relative;
+    top: -8px;
+    
+  }*/
+ 
+  
+  
+
+ 
 
 .btn-item {
     width: auto;
@@ -134,6 +202,75 @@
     color:var(--grey);
     display: flex;
     align-items: center;
-    justify-content: center;
     cursor: pointer;
+  
 }
+
+.short-hide{
+    font-size: 13px;
+    margin-left: 15px;
+    display: none;
+       
+}
+
+.short-image{
+    background: rgb(217, 215, 215);
+    border-radius: 5px;
+    color: rgb(99, 98, 98);
+    padding: 2px;
+    transition: filter 0.5s ease;
+}   
+   .btn-aside-section.hovered #agriculture{
+    background:rgb(176, 199, 176);
+    
+  }
+  
+  .btn-aside-section.hovered #textiles{
+    background: rgb(229, 214, 187);
+    color: rgb(228, 132, 98);
+  }
+  .btn-aside-section.hovered #food{
+    color: rgb(181, 74, 74);
+    background: rgb(192, 181, 181);
+
+  }
+  .btn-aside-section.hovered #medicine{
+    color: rgb(102, 188, 188);
+    background: rgb(197, 214, 214);
+  }
+
+  .btn-aside-section.hovered .btn-item {
+    color:black;
+   
+     
+  }
+  
+  .btn-aside-section.hovered .short-hide {
+    display: block; 
+  }
+  
+  .btn-aside-section .short-hide {
+    display: none; 
+  }
+
+  
+
+ 
+  
+  
+ 
+  
+
+
+ 
+  
+
+ 
+ 
+
+ 
+
+
+
+
+

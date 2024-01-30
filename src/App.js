@@ -1,14 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-import MapComponent from './Components/Map';
-
+import "./App.css";
+//import MapComponent from "./Components/Map";
+//import AddProduct from "./Components/Map/AddProduct";
+import EditProduct from "./Components/Map/EditProduct";
 
 function App() {
   return (
     <div className="app-wrapper">
       {/* <MapView /> */}
-      <MapComponent />
+      {/* <MapComponent /> {/*this one is real*/}
+      {/* <AddProduct />*/}
+      <EditProduct />
     </div>
   );
 }
