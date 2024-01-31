@@ -8,7 +8,7 @@ function App() {
     <div className="app-wrapper">
       {/* <MapView /> */}
       {/* <MapComponent /> {/*this one is real*/}
-      {/* <AddProduct />*/}
+      {/*<AddProduct />*/}
       <EditProduct />
     </div>
   );

@@ -3,12 +3,14 @@ import "./AddProduct.css";
 import { MdMenu } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
 import userprofile from "../icons/userprofile.png";
-//import { GoHomeFill } from "react-icons/go";
-//import nutrition1 from "../icons/nutrition1.png";
-//import nutrition from "../icons/nutrition.png";
-//import package2 from "../icons/package2.png";
-//import orderHistory from "../icons/orderHistory.png";
-//import { MdManageAccounts } from "react-icons/md";
+import { GoHomeFill } from "react-icons/go";
+import nutrition1 from "../icons/nutrition1.png";
+import nutrition from "../icons/nutrition.png";
+import package2 from "../icons/package2.png";
+import package1 from "../icons/package1.png";
+import orderHistory from "../icons/orderHistory.png";
+import orderHistory1 from "../icons/orderHistory1.png";
+import { MdManageAccounts } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
@@ -16,7 +18,7 @@ import { BiCloudUpload } from "react-icons/bi";
 import { HiOutlineChevronUpDown } from "react-icons/hi2";
 import { LiaRupeeSignSolid } from "react-icons/lia";
 import { CgClose } from "react-icons/cg";
-import { LuLogIn } from "react-icons/lu";
+//import { LuLogIn } from "react-icons/lu";
 const AddProduct = () => {
   const [activeItem, setActiveItem] = useState(null);
   const [isItemListVisible, setIsItemListVisible] = useState(false); //this is for icon action
@@ -693,7 +695,7 @@ const AddProduct = () => {
               }}
             />
           )}
-          <LuLogIn
+          <GoHomeFill
             style={{
               color: isItemActive("Home") ? "blue" : "gray",
               width: "20px",
@@ -706,14 +708,15 @@ const AddProduct = () => {
               color: isItemActive("Home") ? "blue" : "gray",
               marginLeft: "6px",
               transition: "color 0.3s ease", // Add transition for the color change
-              color:
+              /* color:
                 hoveredItem === "Navigation to Home" ||
                 isItemActive("Navigation to Home")
                   ? "lightblue"
                   : "gray",
             }}
             onMouseOver={() => setHoveredItem("Navigation to Home")}
-            onMouseOut={() => setHoveredItem(null)}
+            onMouseOut={() => setHoveredItem(null)}*/
+            }}
           >
             Home
           </span>
@@ -750,12 +753,11 @@ const AddProduct = () => {
               }}
             />
           )}
-          {/*<img
+          <img
             className="nutrition"
             // src={nutrition1}
             // src={isItemActive ? "nutrition1" : "nutrition"}
-            src={isItemActive("GI Products") ? nutrition : nutrition1}*/}
-          <LuLogIn
+            src={isItemActive("GI Products") ? nutrition : nutrition1}
             style={{
               color: isItemActive("GI Products") ? "blue" : "gray",
               width: "20px",
@@ -767,13 +769,14 @@ const AddProduct = () => {
               color: isItemActive("GI Products") ? "blue" : "gray",
               marginLeft: "6px",
               transition: "color 0.3s ease", // Add transition for the color change
-              color:
+              /*  color:
                 hoveredItem === "GI Products" || isItemActive("GI Products")
                   ? "lightblue"
                   : "gray",
             }}
             onMouseOver={() => setHoveredItem("GI Products")}
-            onMouseOut={() => setHoveredItem(null)}
+            onMouseOut={() => setHoveredItem(null)}*/
+            }}
           >
             GI Products
           </span>
@@ -810,10 +813,10 @@ const AddProduct = () => {
               }}
             />
           )}
-          {/*<img
-            src={package2}
-            alt="package2" */}
-          <LuLogIn
+          <img
+            //src={package2}
+            src={isItemActive("Order Management") ? package1 : package2}
+            alt="package2"
             style={{
               color: isItemActive("Order Management") ? "blue" : "gray",
               width: "20px",
@@ -825,14 +828,15 @@ const AddProduct = () => {
               color: isItemActive("Order Management") ? "blue" : "gray",
               marginLeft: "6px",
               transition: "color 0.3s ease", // Add transition for the color change
-              color:
+              /*color:
                 hoveredItem === " Order Management" ||
                 isItemActive(" Order Management")
                   ? "lightblue"
                   : "gray",
             }}
             onMouseOver={() => setHoveredItem(" Order Management")}
-            onMouseOut={() => setHoveredItem(null)}
+          onMouseOut={() => setHoveredItem(null)}*/
+            }}
           >
             Order Management
           </span>
@@ -869,10 +873,10 @@ const AddProduct = () => {
               }}
             />
           )}
-          {/* <img
-            src={orderHistory}
-            alt="orderHistory"*/}
-          <LuLogIn
+          <img
+            //src={orderHistory}
+            src={isItemActive("Order History") ? orderHistory1 : orderHistory}
+            alt="orderHistory"
             style={{
               color: isItemActive("Order History") ? "blue" : "gray",
               width: "20px",
@@ -884,14 +888,15 @@ const AddProduct = () => {
               color: isItemActive("Order History") ? "blue" : "gray",
               marginLeft: "6px",
               transition: "color 0.3s ease", // Add transition for the color change
-              color:
+              /*  color:
                 hoveredItem === " Order History" ||
                 isItemActive(" Order History")
                   ? "lightblue"
                   : "gray",
             }}
             onMouseOver={() => setHoveredItem(" Order History")}
-            onMouseOut={() => setHoveredItem(null)}
+            onMouseOut={() => setHoveredItem(null)}*/
+            }}
           >
             Order History
           </span>
@@ -928,7 +933,7 @@ const AddProduct = () => {
               }}
             />
           )}
-          <LuLogIn
+          <MdManageAccounts
             style={{
               color: isItemActive("Account Settings") ? "blue" : "gray",
               width: "20px",
@@ -940,14 +945,15 @@ const AddProduct = () => {
               color: isItemActive("Account Settings") ? "blue" : "gray",
               marginLeft: "6px",
               transition: "color 0.3s ease", // Add transition for the color change
-              color:
+              /*  color:
                 hoveredItem === " Account Settings" ||
                 isItemActive(" Account Settings")
                   ? "lightblue"
                   : "gray",
             }}
             onMouseOver={() => setHoveredItem(" Account Settings")}
-            onMouseOut={() => setHoveredItem(null)}
+            onMouseOut={() => setHoveredItem(null)}*/
+            }}
           >
             Account Settings
           </span>
