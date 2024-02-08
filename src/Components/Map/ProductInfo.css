@@ -1,0 +1,146 @@
+.edit-image{
+    /*left: 680px;*/
+    /*top: 12px;*/
+    
+    position: relative;
+    right: -680px;
+    width: 35px;
+    height: 35px;
+   
+}
+.delete-image{
+  position: absolute;
+    right: 60px;
+    width: 35px;
+    height: 35px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper {
+    position: relative;
+    margin: 10px;
+    transition: width 0.3s;
+  }
+  .delete-image-wrapper {
+    margin-top: 10px;
+    transition: width 0.3s;
+  }
+   .hover-image {
+    width: 80%;
+    height: auto; 
+  }
+  .delete-hover-image {
+    width: 80%; 
+    height: auto; 
+  }  
+  .image-wrapper.hovered {
+    width: 100px;
+    left: 640px;
+    transition: opacity 0.3s;
+  }
+  .delete-image-wrapper.hovered{
+    width: 120px; 
+    /*right: 50px;*/
+    left: 730px;
+    transition: opacity 0.3s;
+
+  }
+
+  .edit-image.hidden {
+    display: none;
+  }
+  
+  .hover-image.hidden {
+    display: block;
+   
+  }
+  .delete-image.hidden {
+    display: none;
+  }
+  
+  .delete-hover-image.hidden {
+    display: block;
+   
+  }
+  .delete-image-wrapper .delete-image + .image-wrapper .edit-image.hover {
+    margin-right: 20px !important;
+  }
+  
+  
+/*end edit and delete img*/
+.icon-carousal{
+  margin-top: 10px;
+  margin-left: 150px;  
+}
+
+.product-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    left: 80px;
+    justify-content: space-between;
+    margin-right:200px ;
+    margin-left: 10px;
+    padding: 2%;
+    position: relative;
+    
+}
+.product-info li{
+    list-style: none;
+    padding: 8px;
+}
+.first-list-item{
+    color: gray;
+}
+.second-list-item{
+    margin-right: 360px;
+}
+
+.second-main-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:350px ;
+    position: absolute;
+    text-align: left;
+    margin-top: -10px;
+    
+}
+.second-main-div li{
+    list-style: none;
+    padding: 18px;
+   
+}
+.third-list-item{
+    color: gray;
+    padding: 0px;
+}
+.fourth-list-item{
+    margin-left: -10px;
+}
+.single-line-item {
+    white-space: nowrap;
+  
+    
+}
+.paragraph{
+    color: black;
+   margin-top: -12px;
+ 
+   margin-right: -150px;
+   margin-left: 18px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* Limit to 3 lines */
+   -webkit-box-orient: vertical;
+   text-align: left; /* Align the text to the left */
+   line-height: 1.2;
+   width: 400px;
+}
+
+  
+
+
+
+

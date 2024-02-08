@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MapView from "./Map";
-import { FaSearch, FaUser } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import { MdOutlineFilterAlt } from "react-icons/md";
 import { GrCart } from "react-icons/gr";
 import userprofile from "../icons/userprofile.png";
@@ -23,7 +23,7 @@ import { IoFastFood } from "react-icons/io5";
 import VaccinesIcon from "@mui/icons-material/Vaccines";
 import { MdAddToPhotos } from "react-icons/md";
 import "./index.css";
-import Login from "../Map/Login";
+//import Login from "../Map/Login";
 
 const MapComponent = function (props) {
   return (
@@ -40,7 +40,6 @@ const SearchControl = (props) => {
   const [showLoginPage, setShowLoginPage] = useState(false);
 
   const handleUserButtonClick = (e) => {
-    // Prevent the default behavior of the click event
     e.preventDefault();
 
     // Toggle the showLoginPage state
@@ -51,22 +50,22 @@ const SearchControl = (props) => {
   const userButtonClass = showLoginPage ? "user-button clicked" : "user-button";
 
   return (
-    <div className="search-div">
-      <div className="search-section">
-        <div className="title">GFOKK</div>
+    <div className="map-search-div">
+      <div className="map-search-section">
+        <div className="map-title">GFOKK</div>
 
-        <div className="input-div">
-          <div className="search-icon">
+        <div className="map-input-div">
+          <div className="map-search-icon">
             <FaSearch />
           </div>
           <input
-            className="input-search"
+            className="map-input-search"
             type={"text"}
             placeholder="Search for Restuarant"
           />
         </div>
 
-        <div className="filter-btn">
+        <div className="map-filter-btn">
           <MdOutlineFilterAlt />
         </div>
       </div>
@@ -96,7 +95,7 @@ const SearchControl = (props) => {
       <div className={userButtonClass}>
         {/*//onClick={handleUserButtonClick}*/}
         {/*<FaUser />*/}
-        <img src={userprofile} width="42px" height="42px" />
+        <img src={userprofile} alt="userprofile" />
         {/* {showLoginPage && <Login />}*/}
       </div>
     </div>
@@ -177,7 +176,7 @@ const LinksSection = () => {
               width: "40px",
               color: "white",
               position: "absolute",
-              top: "-8px",
+              top: "-1px",
               marginLeft: "10px",
               borderTop: "1px solid white",
             }}
@@ -226,7 +225,7 @@ const LinksSection = () => {
               width: "40px",
               color: "white",
               position: "absolute",
-              top: "-8px",
+              top: "-1px",
               marginLeft: "70px",
               borderTop: "1px solid white",
             }}
@@ -275,7 +274,7 @@ const LinksSection = () => {
               width: "40px",
               color: "white",
               position: "absolute",
-              top: "-8px",
+              top: "-1px",
               marginLeft: "134px",
               borderTop: "1px solid white",
             }}
@@ -320,7 +319,7 @@ const LinksSection = () => {
               width: "40px",
               color: "white",
               position: "absolute",
-              top: "-8px",
+              top: "-1px",
               marginLeft: "200px",
               borderTop: "1px solid white",
             }}

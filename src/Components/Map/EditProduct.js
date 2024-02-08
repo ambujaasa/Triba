@@ -18,11 +18,11 @@ import { BiCloudUpload } from "react-icons/bi";
 import { HiOutlineChevronUpDown } from "react-icons/hi2";
 import { LiaRupeeSignSolid } from "react-icons/lia";
 import { CgClose } from "react-icons/cg";
-import { LuLogIn } from "react-icons/lu";
+//import { LuLogIn } from "react-icons/lu";
 const EditProduct = () => {
   const [activeItem, setActiveItem] = useState(null);
   const [isItemListVisible, setIsItemListVisible] = useState(false); //this is for icon action
-  const [hoveredItem, setHoveredItem] = useState(null); // this is for sidebar hover effect to span
+  //const [hoveredItem, setHoveredItem] = useState(null); // this is for sidebar hover effect to span
   const handleIconClick = () => {
     setIsItemListVisible(!isItemListVisible);
   };
@@ -45,7 +45,7 @@ const EditProduct = () => {
         className="title-section"
         //style={{ boxShadow: "1px 0px 0px rgba(1, 1, 1, 0.2)" }}
         style={{
-          boxShadow: "0px 4px 8px rgba(1, 1, 1, 0.3)",
+          boxShadow: "0px 8px rgba(1, 1, 1, 0.3)",
           backgroundColor: "white",
         }}
       >
@@ -58,7 +58,7 @@ const EditProduct = () => {
       {/*dashboard*/}
       <div
         className="dashboard-section"
-        style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}
+        style={{ boxShadow: "0px 8px rgba(0, 0, 0, 0.2)" }}
       >
         <div className="dashboard-div">
           <MdMenu className="menuicon" size={30} />
@@ -88,9 +88,9 @@ const EditProduct = () => {
         style={{
           backgroundColor: "#e5e2e2",
           height: "300vh",
-          width: "180vh",
+          width: "82%",
           position: "absolute",
-          left: "210px",
+          left: "249px",
           top: "130px",
           boxShadow: "0 4px 8px rgba(1, 1, 1, 0.2)",
         }}
@@ -268,7 +268,7 @@ const EditProduct = () => {
                       //padding: "1px",
                     }}
                   />
-                  <CgClose className="close-icon" style={{ left: "310px" }} />
+                  <CgClose className="close-icon" style={{ left: "300px" }} />
                 </div>
                 <div
                   className="input-container"
@@ -298,7 +298,7 @@ const EditProduct = () => {
                       //padding: "1px",
                     }}
                   />
-                  <CgClose className="close-icon" style={{ left: "425px" }} />
+                  <CgClose className="close-icon" style={{ left: "415px" }} />
                 </div>
 
                 <div
@@ -330,7 +330,7 @@ const EditProduct = () => {
                   />
                   <CgClose
                     className="close-icon"
-                    style={{ left: "100px", marginTop: "40px" }}
+                    style={{ left: "90px", marginTop: "40px" }}
                   />
                 </div>
               </div>

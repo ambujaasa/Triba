@@ -22,7 +22,7 @@ import { CgClose } from "react-icons/cg";
 const AddProduct = () => {
   const [activeItem, setActiveItem] = useState(null);
   const [isItemListVisible, setIsItemListVisible] = useState(false); //this is for icon action
-  const [hoveredItem, setHoveredItem] = useState(null); // this is for sidebar hover effect to span
+  // const [hoveredItem, setHoveredItem] = useState(null); // this is for sidebar hover effect to span
   const handleIconClick = () => {
     setIsItemListVisible(!isItemListVisible);
   };
@@ -38,14 +38,14 @@ const AddProduct = () => {
       className="addproduct-section"
       style={{
         backgroundColor: "white",
-        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+        boxShadow: "0px 8px rgba(0, 0, 0, 0.1)",
       }}
     >
       <div
         className="title-section"
         //style={{ boxShadow: "1px 0px 0px rgba(1, 1, 1, 0.2)" }}
         style={{
-          boxShadow: "0px 4px 8px rgba(1, 1, 1, 0.3)",
+          boxShadow: "0px 8px rgba(0, 0, 0, 0.2)",
           backgroundColor: "white",
         }}
       >
@@ -58,7 +58,8 @@ const AddProduct = () => {
       {/*dashboard*/}
       <div
         className="dashboard-section"
-        style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}
+        style={{ boxShadow: "0px 8px rgba(0, 0, 0, 0.2)" }}
+        //{ boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)" }}
       >
         <div className="dashboard-div">
           <MdMenu className="menuicon" size={30} />
@@ -88,9 +89,9 @@ const AddProduct = () => {
         style={{
           backgroundColor: "#e5e2e2",
           height: "300vh",
-          width: "180vh",
+          width: "82%",
           position: "absolute",
-          left: "210px",
+          left: "249px",
           top: "130px",
           boxShadow: "0 4px 8px rgba(1, 1, 1, 0.2)",
         }}
@@ -268,7 +269,7 @@ const AddProduct = () => {
                       //padding: "1px",
                     }}
                   />
-                  <CgClose className="close-icon" style={{ left: "310px" }} />
+                  <CgClose className="close-icon" style={{ left: "300px" }} />
                 </div>
                 <div
                   className="input-container"
@@ -298,7 +299,7 @@ const AddProduct = () => {
                       //padding: "1px",
                     }}
                   />
-                  <CgClose className="close-icon" style={{ left: "425px" }} />
+                  <CgClose className="close-icon" style={{ left: "415px" }} />
                 </div>
 
                 <div
@@ -330,7 +331,7 @@ const AddProduct = () => {
                   />
                   <CgClose
                     className="close-icon"
-                    style={{ left: "100px", marginTop: "40px" }}
+                    style={{ left: "90px", marginTop: "40px" }}
                   />
                 </div>
               </div>
@@ -755,6 +756,7 @@ const AddProduct = () => {
           )}
           <img
             className="nutrition"
+            alt="nutrition1"
             // src={nutrition1}
             // src={isItemActive ? "nutrition1" : "nutrition"}
             src={isItemActive("GI Products") ? nutrition : nutrition1}

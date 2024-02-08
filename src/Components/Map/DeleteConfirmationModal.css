@@ -1,0 +1,64 @@
+.delete-confirmation-modal{
+    position:absolute;
+   /* border:  solid whitesmoke;*/
+   border-left: 1px solid whitesmoke;
+    margin-top: -250px;
+    margin-left: 130px;   
+    background-color: white;
+    color: black;
+    padding: 2%;
+    border-radius: 10px;
+    position: absolute;
+    height: 110px;
+    
+
+}
+.error-image{
+    width: 30px;
+    height: 30px;
+    margin-left: 120px;
+    
+    
+}
+.close-image{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: -15px;
+    margin-right: -10px;
+    color: gray;
+    width: 25px;
+    height: 25px;
+   
+}
+.para-1{
+    font-size: 15px;
+    text-align: center;
+}
+.para-2{
+    font-size: 13px;
+    text-align: center;
+}
+.cancel-button{
+margin-top: 20px;
+margin-left: 80px;
+background-color:white;
+color:black;
+font-size: 12px;
+border-radius: 10px;
+width: 80px;
+height: 22px;
+border: none;
+}
+.delete-button{
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 80px;
+    height: 22px;
+    border: none;
+    
+}
